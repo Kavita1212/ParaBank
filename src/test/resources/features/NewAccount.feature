@@ -10,10 +10,11 @@ And user click on Open New Account Button
 Then Message displayed "Account Opened!"
 And click on Account Number
 And Verify Account Type as "<account>"
-Then close the browser
+#Then close the browser
+Then close browser
 Examples:
     | account  | accountNo|
     | CHECKING | 13344    |
-    | SAVINGS  | 13344	  |     
+    | SAVINGS  | 13344 |     
   
 

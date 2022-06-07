@@ -14,11 +14,12 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 
 @CucumberOptions(
-		features = "src/test/resources/features/UpdateContactInfo.feature",
+		//features = "src/test/resources/features/TransferFunds.feature",
+		features = "src/test/resources/features",
 		glue= {"stepDefinitions"},
 		plugin = { "com.cucumber.listener.ExtentCucumberFormatter:target/cucumber-reports/report.html"},
 		monochrome =true,
-		dryRun = true
+		dryRun = false
 		)
 public class TestRunner {	
 	
